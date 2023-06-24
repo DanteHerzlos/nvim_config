@@ -14,7 +14,7 @@ return require('packer').startup(function(use)
   use ({'folke/tokyonight.nvim', as = 'tokyonight'})
 
   vim.cmd('colorscheme rose-pine')
---  vim.cmd('colorscheme tokyonight')
+ -- vim.cmd('colorscheme tokyonight')
 
 
   use {
@@ -30,6 +30,7 @@ return require('packer').startup(function(use)
       require("nvim-tree").setup {}
     end
   }
+
   use('ryanoasis/vim-devicons')
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('nvim-treesitter/playground')
@@ -66,4 +67,15 @@ return require('packer').startup(function(use)
     {'rafamadriz/friendly-snippets'},
   }
 }
+
+  use('eandrju/cellular-automaton.nvim')
+  use("laytan/cloak.nvim")
+
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
+
 end)
