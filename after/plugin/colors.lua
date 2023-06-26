@@ -6,4 +6,34 @@ function ColorMyPencils(color)
 --  vim.api.nvim_set_hl(0, "NormalFloat", {bg = "none"})
 end
 
-ColorMyPencils()
+--[[ 
+'rose-pine'
+'tokyonight'
+'catppuccin'
+'gruvbox' 
+]]
+
+require('rose-pine').setup({
+	variant = 'moon',
+  disable_italics = true,
+})
+
+require('gruvbox').setup({
+  disable_italics = true,
+  italic = {
+    strings = false,
+    comments = false,
+    operators = false,
+    folds = false,
+  },
+})
+
+require("catppuccin").setup({
+  no_italic = true,
+  background = {
+    light = "latte",
+    dark = "macchiato",
+  },
+})
+
+ColorMyPencils('rose-pine')
