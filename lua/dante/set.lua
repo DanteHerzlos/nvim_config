@@ -15,7 +15,6 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 
 vim.opt.swapfile = false
-vim.opt.undodir = "C:\\Users\\Dante\\AppData\\Local\\nvim-data\\undodir"
 vim.opt.backup = false
 vim.opt.undofile = true
 
