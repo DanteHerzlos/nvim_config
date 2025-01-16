@@ -1,1 +1,1 @@
-require('dante')
+require("dante")

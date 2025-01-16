@@ -1,11 +1,4 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.NvimTreeToggle)
-
-vim.keymap.set("n", "<leader>ff", function()
-  vim.lsp.buf.format()
-  vim.cmd.Prettier()
-end)
--- vim.keymap.set("n", "<leader>ff", vim.lsp.buf.format )
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
